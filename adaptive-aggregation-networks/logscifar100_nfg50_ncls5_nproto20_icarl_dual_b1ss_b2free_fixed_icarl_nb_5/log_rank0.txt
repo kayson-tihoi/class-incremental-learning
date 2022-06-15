@@ -1,0 +1,12 @@
+[2022-06-15 02:57:45 root] (trainer.py 97): INFO Namespace(K=2, base_lr1=0.1, base_lr2=0.1, baseline='icarl', branch_1='ss', branch_2='free', branch_mode='dual', ckpt_dir_fg='-', ckpt_label='icarl_nb_5', custom_momentum=0.9, custom_weight_decay=0.0005, data_dir='data/seed_1993_subset_100_imagenet/data', datablob='./', dataset='cifar100', disable_gpu_occupancy=True, dist=0.5, dynamic_budget=False, epochs=160, eval_batch_size=128, fusion_lr=1e-08, gpu='3', icarl_T=2, icarl_beta=0.25, imgnet_backbone='resnet18', lr_factor=0.1, lw_mr=1, nb_cl=5, nb_cl_fg=50, nb_protos=20, num_classes=100, num_workers=1, random_seed=1993, resume=False, resume_fg=False, test_batch_size=100, the_lambda=5, train_batch_size=128)
+[2022-06-15 02:57:48 root] (trainer.py 170): INFO Check point name: ./logscifar100_nfg50_ncls5_nproto20_icarl_dual_b1ss_b2free_fixed_icarl_nb_5/iter_9_b1.pth
+[2022-06-15 02:57:48 root] (zeroth_phase.py 57): INFO Epoch: 0, learning rate: 0.1
+[2022-06-15 02:57:58 root] (zeroth_phase.py 78): INFO Train set: 196, train loss: 3.4469 accuracy: 10.5680
+[2022-06-15 02:58:00 root] (zeroth_phase.py 94): INFO Test set: 50 test loss: 3.1005 accuracy: 16.3800
+[2022-06-15 02:58:00 root] (zeroth_phase.py 57): INFO Epoch: 1, learning rate: 0.1
+[2022-06-15 02:58:11 root] (zeroth_phase.py 78): INFO Train set: 196, train loss: 2.9009 accuracy: 21.6000
+[2022-06-15 02:58:12 root] (zeroth_phase.py 94): INFO Test set: 50 test loss: 2.8225 accuracy: 23.7800
+[2022-06-15 02:58:12 root] (zeroth_phase.py 57): INFO Epoch: 2, learning rate: 0.1
+[2022-06-15 02:58:23 root] (zeroth_phase.py 78): INFO Train set: 196, train loss: 2.6193 accuracy: 28.0000
+[2022-06-15 02:58:25 root] (zeroth_phase.py 94): INFO Test set: 50 test loss: 2.8788 accuracy: 23.5200
+[2022-06-15 02:58:25 root] (zeroth_phase.py 57): INFO Epoch: 3, learning rate: 0.1

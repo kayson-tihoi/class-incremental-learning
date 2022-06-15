@@ -62,9 +62,8 @@ class BaseTrainer(object):
 
     def set_save_path(self):
         """The function to set the saving path."""
-        self.log_dir = './logs/'
-        if not osp.exists(self.log_dir):
-            os.mkdir(self.log_dir)
+        self.log_dir = os.path.join(self.args.datablob, 'logs')
+        os.makedirs(self.log_dir, exist_ok=True)
         self.save_path = self.log_dir + self.args.dataset + \
             '_nfg' + str(self.args.nb_cl_fg) + \
             '_ncls' + str(self.args.nb_cl) + \
@@ -82,8 +81,7 @@ class BaseTrainer(object):
             self.save_path += '_fixed'  
 
         self.save_path += '_' + str(self.args.ckpt_label)
-        if not osp.exists(self.save_path):
-            os.mkdir(self.save_path) 
+        os.makedirs(self.save_path, exist_ok=True)
 
     def set_cuda_device(self):
         """The function to set CUDA device."""

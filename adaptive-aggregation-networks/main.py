@@ -66,6 +66,8 @@ if __name__ == '__main__':
     parser.add_argument('--icarl_beta', default=0.25, type=float, help='beta for iCaRL')
     parser.add_argument('--icarl_T', default=2, type=int, help='T for iCaRL')
 
+    parser.add_argument('--datablob', default="./", type=str, help='path for datablob')
+
     the_args = parser.parse_args()
 
     # Checke the number of classes, ensure they are reasonable
